@@ -8,33 +8,33 @@ const skillsData = [
   {
     category: "Programming Languages",
     skills: [
-      { name: "HTML", level: 90 },
-      { name: "CSS", level: 85 },
-      { name: "JavaScript", level: 80 },
-      { name: "Python", level: 75 },
-      { name: "Java", level: 70 },
-      { name: "C", level: 75 },
-      { name: "C++", level: 70 },
-      { name: "PHP", level: 65 },
+      { name: "HTML"},
+      { name: "CSS"},
+      { name: "JavaScript" },
+      { name: "Python" },
+      { name: "Java"},
+      { name: "C" },
+      { name: "C++" },
+      { name: "PHP" },
     ],
   },
   {
     category: "Frameworks & Libraries",
     skills: [
-      { name: "React.js", level: 75 },
-      { name: "Node.js", level: 70 },
-      { name: "Express.js", level: 65 },
-      { name: "TailwindCSS", level: 80 },
+      { name: "React.js" },
+      { name: "Node.js"},
+      { name: "Express.js" },
+      { name: "TailwindCSS" },
     ],
   },
   {
     category: "Tools & Technologies",
     skills: [
-      { name: "Git & GitHub", level: 85 },
-      { name: "SQL", level: 75 },
-      { name: "API Integration", level: 80 },
-      { name: "Arduino", level: 70 },
-      { name: "Raspberry Pi", level: 65 },
+      { name: "Git & GitHub"},
+      { name: "SQL"},
+      { name: "API Integration"},
+      { name: "Arduino" },
+      { name: "Raspberry Pi" },
     ],
   },
 ]
@@ -71,7 +71,7 @@ export default function Skills() {
                       <div key={skillIndex}>
                         <div className="mb-1 flex justify-between">
                           <span>{skill.name}</span>
-                          <span className="text-indigo-400">{skill.level}%</span>
+                          <span className="text-indigo-400">{skill.level}</span>
                         </div>
                         <Progress
                           value={skill.level}
