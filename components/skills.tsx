@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
 
 const skillsData = [
   {
@@ -66,18 +65,10 @@ export default function Skills() {
               <Card className="h-full overflow-hidden bg-gray-800 text-white shadow-xl">
                 <CardContent className="p-6">
                   <h3 className="mb-6 text-xl font-semibold text-indigo-400">{category.category}</h3>
-                  <div className="space-y-4">
+                  <div className="space-y-3">
                     {category.skills.map((skill, skillIndex) => (
-                      <div key={skillIndex}>
-                        <div className="mb-1 flex justify-between">
-                          <span>{skill.name}</span>
-                          <span className="text-indigo-400">{skill.level}</span>
-                        </div>
-                        <Progress
-                          value={skill.level}
-                          className="h-2 bg-gray-700"
-                          indicatorClassName="bg-gradient-to-r from-indigo-600 to-violet-600"
-                        />
+                      <div key={skillIndex} className="text-gray-300">
+                        {skill.name}
                       </div>
                     ))}
                   </div>
